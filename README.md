@@ -1,29 +1,24 @@
-uOSC
+uNTMP
 ====
 
-**uOSC** is an OSC implementation for Unity.
+**uNTMP** is an NTMP (NyanTogether Motion Protocol) implementation for Unity.
+
+This is a draft implementation of a work-in-progress protocol
 
 Install
 -------
 
 - Unity Package
-  - Download the latest .unitypackage from [Release page](https://github.com/hecomi/uOSC/releases).
-- Git URL (UPM)
-  - Add `https://github.com/hecomi/uOSC.git#upm` to Package Manager.
-- Scoped Registry (UPM)
-  - Add a scoped registry to your project.
-    - URL: `https://registry.npmjs.com`
-    - Scope: `com.hecomi`
-  - Install uOSC in Package Manager.
+  - Download the latest .unitypackage from [Release page](https://github.com/jayo-exe/uNTMP/releases).
 
 How to use
 ----------
 
 ### Server
 
-1. Attach `uOscServer` component to a GameObject.
+1. Attach `uNtmpServer` component to a GameObject.
 2. Set the port you want to listen on.
-3. Register the `uOscServer.onDataReceived` event (from code or inspector).
+3. Register the `uNtmpServer.onDataReceived` event (from code or inspector).
 
 ```cs
 using UnityEngine;
